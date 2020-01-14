@@ -17,5 +17,6 @@ public class ConversorTemperaturas {
         throw new TemperaturaErradaExcepcion("A temperatura non pode ser maior que "+temperaturaCelsius+"ºC");
         }
         float Reamur=(float) (4/5 * centigrados);
+        System.out.println(Reamur);
     }
 }
