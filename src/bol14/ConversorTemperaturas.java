@@ -6,7 +6,7 @@ public class ConversorTemperaturas {
     
     public float centigradosAFharenheit(float centigrados) throws TemperaturaErradaExcepcion{
         if (centigrados<temperaturaCelsius){
-        throw new TemperaturaErradaExcepcion("A temperatura non pode ser maior que "+temperaturaCelsius+"ºC");
+        throw new TemperaturaErradaExcepcion("A temperatura non pode ser menor que "+temperaturaCelsius+"ºC");
         }
         float Fharenheit=(float) (9/5* centigrados +32.4);
         System.out.println(Fharenheit);
@@ -14,7 +14,7 @@ public class ConversorTemperaturas {
     }
     public void centigradosAReamur(float centigrados) throws TemperaturaErradaExcepcion{
         if (centigrados<temperaturaCelsius){
-        throw new TemperaturaErradaExcepcion("A temperatura non pode ser maior que "+temperaturaCelsius+"ºC");
+        throw new TemperaturaErradaExcepcion("A temperatura non pode ser menor que "+temperaturaCelsius+"ºC");
         }
         float Reamur=(float) (4/5 * centigrados);
         System.out.println(Reamur);
